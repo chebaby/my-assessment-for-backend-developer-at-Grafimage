@@ -1,0 +1,34 @@
+Délai de réalisation : 2 Jours
+- Intégration responsive et valide aux normes : 1J (6h)
+- Développement sous Laravel : 1/2J
+
+Partie intégration
+- Integration HTML5/CSS Responsive
+- Valide aux normes W3C
+
+Partie développement
+- Développement sous Laravel
+- Backoffice pour afficher la liste des inscrits et leurs informations avec la possibilité d'ajouter/Supprimer/Modifier les inscrits directement via le backoffice
+- Page pour exporter la liste des inscrits sous format csv.
+- Après l'inscription l'internaute reçois un mail de notification
+- Après l'inscription il faut afficher un msg de notification sur la page
+
+Partie sécurité, Organisation et performance
+- Sécuriser les fichiers et la BDD
+- Optimiser le code  (le temps de chargement)
+- Code structuré et commenté
+
+Msg de notification 
+Votre demande d'inscription a bien été prise en compte. Vous recevrez d'ici peu une confirmation par email
+
+Email de notification 
+Bonjour Xxxx XXXXX,
+
+Vos informations ont bien été prises en compte.
+Nous serons ravis de vous accueillir lors du Sirha Hall 6 – Stand 6E06
+
+Au plaisir de vous y retrouver
+L’équipe JDE
+
+
+NB : C'est un projet de teste aucune ressource seras communiquée au client.

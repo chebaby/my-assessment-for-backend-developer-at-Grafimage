@@ -1,0 +1,83 @@
+.form-errors {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    p {
+      font-size: 1.1em;
+      font-weight: bold;
+      font-family: "GeorgiaItalic", sans-serif;
+    }
+
+  .bs-callout {
+    padding: 10px;
+    border-left: 3px solid #eee;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  .bs-callout-warning {
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+
+    h4 {
+      color: #f0ad4e;
+    }
+
+    p {
+      color: #d84315;
+    }
+  }
+
+  .bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #5bc0de;
+
+    h4 {
+      color: #5bc0de;
+    }
+
+    p {
+      color: #7CB342;
+    }
+  }
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: lighten($secondary-color, 10%);
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+node_modules/
+
+laravel51/vendor/
+laravel51/node_modules/
+laravel51/storage/app/*.*
+laravel51/storage/framework/cache/*.*
+laravel51/storage/framework/sessions/*.*
+laravel51/storage/framework/views/*.*
+laravel51/storage/app/*.*
+laravel51/bootstrap/cache/*.*
+
+# Laravel 4 specific
+laravel51/bootstrap/compiled.php
+laravel51/app/storage/
+
+# Laravel 5 & Lumen specific
+laravel51/public/storage
+laravel51/storage/*.key
+laravel51/.env.*.php
+laravel51/.env.php
+laravel51/.env

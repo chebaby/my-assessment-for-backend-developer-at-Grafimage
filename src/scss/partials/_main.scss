@@ -1,0 +1,251 @@
+main {
+	min-height: 300px;
+	height: auto;
+	background-color: $primary-color;
+	border-bottom-right-radius: 6em;
+
+	form#survey {
+		margin-bottom: 0;
+	}
+
+	.actions {
+		width: 70%;
+	    height: 300px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0 auto;
+	}
+}
+
+
+section {
+	width: 540px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-top: 40px;
+
+	&:last-child {
+		padding-bottom: 50px;
+	}
+
+
+	h2 {
+		font-family: "AlternateGothicStdNo2", sans-serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 0.5em;
+		letter-spacing: 0;
+	}
+
+
+	.label {
+		font-size: 0.9em;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+
+	.description {
+		display: block;
+		font-size: 0.6em;
+		letter-spacing: 0.5px;
+		line-height: 5px;
+
+		@media (max-width: 465px) {
+			line-height: 15px;
+		}
+	}
+
+
+	input[type="radio"] {
+	    display:none;
+	}
+
+	input[type="radio"] + label {
+		font-family: "AlternateGothicStdNo2", sans-serif;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+
+	&.coordonates {
+
+		input[type=text],
+		input[type=email],
+		input[type=tel] {
+			height: 25px;
+			margin-bottom: 6px;
+			border-radius: 0;
+		}
+	}
+
+
+	&.sector {
+		text-align: center;
+
+
+		input[type=text] {
+			height: 32px;
+			width: 200px;
+			max-width: 100%;
+			border-radius: 0;
+			border-bottom: 0;
+			margin: 20px auto 0;
+		}
+
+		input[type="radio"] + label span {
+			display:inline-block;
+			width:9px;
+			height:9px;
+			margin:-1px 4px 0 0;
+			vertical-align:middle;
+			cursor:pointer;
+			border-radius:  50%;
+			border: 2px solid transparent;
+		}
+
+		input[type="radio"] + label span {
+			background-color: $secondary-color;
+		}
+
+		input[type="radio"]:checked + label span{
+			background-color: $tertiary-color;
+			border-color: lighten($tertiary-color, 15%);
+		}
+
+		input[type="radio"] + label span,
+		input[type="radio"]:checked + label span {
+			transition:background-color 0.4s linear;
+		}
+	}
+
+
+	&.questions {
+
+		.row {
+			display: flex;
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@media (max-width: 749px) {
+				display: block;
+			}
+		}
+
+		.answers {
+			display: flex;
+
+			@media (max-width: 750px) {
+				margin-top: 15px;
+			}
+		}
+
+		.label {
+			font-size: 1em;
+		}
+
+		.input-group {
+			position: relative;
+
+			.icon {
+				position: absolute;
+				bottom:2px;
+				left:6px;
+				width:27px;
+				height:24px;
+			}
+		}
+
+		label {
+			display: inline-block;
+
+			&.label {
+				margin: 0;
+				margin-right: 20px;
+				line-height: 31px;
+			}
+		}
+
+		textarea {
+			height: 85px;
+			margin-top: 6px;
+		}
+
+		input[type="submit"] {
+			font-family: "AlternateGothicStdNo2", sans-serif;
+			font-size: 1.3em;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff;
+		    min-width: 150px;
+		    height: auto;
+		    line-height: 1.5;
+			margin: 0 auto;
+			margin-top: 40px;
+		    padding: 3px 10px;
+			background-color: $tertiary-color;
+		    border: 3px solid transparent;
+		    border-radius: 25px;
+		    transition: all .2s ease-out;
+
+		    &:hover {
+		    	border-color: lighten($tertiary-color, 15%);
+		    }
+		}
+
+		input[type="text"] {
+			height: 31px;
+			border-radius: 0;
+			margin: 0;
+		}
+
+		input[type="radio"] + label span {
+			display:inline-block;
+			width: 38px;
+			height: 38px;
+			line-height: 40px;
+			margin:-1px 4px 0 0;
+			vertical-align:middle;
+			cursor:pointer;
+			border-radius:  50%;
+			border: 2px solid transparent;
+		}
+
+		input[type="radio"] + label span {
+			background-color: $secondary-color;
+		}
+
+		input[type="radio"]:checked + label span{
+			background-color: $tertiary-color;
+			border-color: lighten($tertiary-color, 10%);
+		}
+
+		input[type="radio"] + label span,
+		input[type="radio"]:checked + label span {
+			transition:background-color 0.4s linear;
+		}
+	}
+
+
+	&.ads {
+
+		img {
+			display: block;
+			width: 275px;
+			height: 220px;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+}

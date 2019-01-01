@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JDE</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<header>
+				<div class="infos">
+					<p>
+						Afin de mieux vous accueillir sur notre stand, nous vous remercions de bien vouloir renseigner ce questionnaire.
+					</p>
+				</div>
+				<div class="img-header">
+					<div class="trans-block"></div>
+				</div>
+			</header>
+			<!-- /header -->
+		</div>
+
+		<div class="row">
+			
+			<main>
+
+				<form action="#" method="POST" accept-charset="utf-8" id="survey" class="survey" data-parsley-validate="">
+
+					<div class="form-errors">
+						<div class="bs-callout bs-callout-warning hidden">
+							<h4>Oooops!</h4>
+							<p>Ce formulaire semble être invalide :(</p>
+						</div>
+						<div class="bs-callout bs-callout-info hidden">
+							<h4>Yay!</h4>
+							<p>Tout semble être ok :)</p>
+						</div>
+					</div>	
+
+					<section class="coordonates">
+						<h2>coordonnées</h2>
+						<input type="text" name="last_name" id="last_name" class="u-full-width" placeholder="Nom" required="">
+						<input type="text" name="first_name" id="first_name" class="u-full-width" placeholder="Prénom" required="">
+						<input type="email" name="email" id="email" class="u-full-width" placeholder="E-mail" data-parsley-trigger="change" required="">
+						<input type="tel" name="phone" pattern="[0-9]{10}" id="phone" class="u-full-width" placeholder="Mobile" required="">
+						<input type="text" name="firm" id="firm" class="u-full-width" placeholder="Entreprise" required="">
+
+					</section>
+					<!-- /section.coordonates -->
+
+					<section class="sector">
+
+						<h2>secteur d'activité</h2>
+
+						<div class="row">
+							<div class="four columns">
+								<p class="label">Restauration Commerciale</p>
+								<input type="radio" name="sector" id="commercial" value="Restauration Commerciale">
+								<label for="commercial"><span></span></label>
+							</div>
+							<div class="four columns">
+								<p class="label">Boulangerie-Patisserie</p>
+								<input type="radio" name="sector" id="baker" value="Boulangerie-Patisserie">
+								<label for="baker"><span></span></label>
+							</div>
+							<div class="four columns">
+								<p class="label">Distributeurs-Grossistes</p>
+								<input type="radio" name="sector" id="wholesaler" value="Distributeurs-Grossistes">
+								<label for="wholesaler"><span></span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="four columns">
+								<p class="label">Fabricants de matériel</p>
+								<input type="radio" name="sector" id="maker" value="Fabricants de matériel">
+								<label for="maker"><span></span></label>
+							</div>
+							<div class="four columns">
+								<p class="label">Industrie Agro-alimentaire</p>
+								<input type="radio" name="sector" id="agro" value="Industrie Agro-alimentaire">
+								<label for="agro"><span></span></label>
+							</div>
+							<div class="four columns">
+								<p class="label">Métiers de bouche</p>
+								<input type="radio" name="sector" id="bouche" value="Métiers de bouche">
+								<label for="bouche"><span></span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="four columns">
+								<p class="label">Restauration collective</p>
+								<input type="radio" name="sector" id="collective" value="Restauration collective">
+								<label for="collective"><span></span></label>
+							</div>
+							<div class="four columns">
+								<p class="label">Autres (précisez)</p>
+								<input type="radio" name="sector" id="other" value="Autres (précisez)">
+								<label for="other"><span></span></label>
+							</div>
+							<div class="four columns">
+								<input type="text" name="sector" id="sector" disabled value="">
+							</div>
+						</div>
+						
+					</section>
+					<!-- /section.sector -->
+
+					<section class="questions">
+
+						<div class="row">
+							<div class="teen columns">
+								<p class="label">Souhaiter-vous rencontrer l'un de nos représentans sur le salon ?*</p>
+								<span class="description">
+									*Si oui, nous prendrons rendez-vous préalablement avec vous par téléphone.
+								</span>
+							</div>
+							<div class="two columns answers">
+								<input type="radio" name="question-1" id="question-1-yes" value="">
+								<label for="question-1-yes"><span>oui</span></label>
+								<input type="radio" name="question-1" id="question-1-non" value="">
+								<label for="question-1-non"><span>non</span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="teen columns">
+								<p class="label">Souhaiter-vous recevoir de la documentation sur nos solutions ?</p>
+							</div>
+							<div class="two columns answers">
+								<input type="radio" name="question-2" id="question-2-yes" value="">
+								<label for="question-2-yes"><span>oui</span></label>
+								<input type="radio" name="question-2" id="question-2-non" value="">
+								<label for="question-2-non"><span>non</span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="twelve columns">
+								<label for="question-2-other" class="label">Si OUI, pourriez-vous préciser vos besoins ?</label>
+								<textarea class="u-full-width" name="question-2" id="question-2-other" rows="4" disabled></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="teen columns">
+								<p class="label">Souhaiter-vous participer à un de nos ateliers Barista ?</p>
+							</div>
+							<div class="two columns answers">
+								<input type="radio" name="question-3" id="question-3-yes" value="">
+								<label for="question-3-yes"><span>oui</span></label>
+								<input type="radio" name="question-3" id="question-3-non" value="">
+								<label for="question-3-non"><span>non</span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<label for="slot" class="label">
+								Merci d'indiquer un créneau préféré
+							</label>
+							<div class="input-group">
+								<input type="text" name="slot" id="slot" value="">
+								<img src="./img/icon-1.png" alt="icon" class="icon">
+							</div>
+						</div>
+
+						<div class="row">
+							<input type="submit" name="sublit" value="submit">
+						</div>
+
+					</section>
+					<!-- /section.questions -->
+
+					<section class="ads">
+						<img src="./img/ads.png" alt="ads">
+					</section>
+					<!-- /section.ads -->
+
+				</form>
+
+			</main>
+
+		</div>
+
+		<div class="row">
+			
+			<footer>
+				<div class="six columns">
+					<img src="./img/slogan.png" class="u-pull-left slogan" alt="slogan">
+				</div>
+				<div class="six columns">
+					<img src="./img/logo-footer.png" class="u-pull-right logo" alt="logo">
+				</div>
+			</footer>
+			<!-- /footer -->
+
+		</div>
+
+	</div>
+
+
+
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/parsley.min.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

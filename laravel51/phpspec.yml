@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Jde
+        psr4_prefix: Jde
+        src_path: app

@@ -1,0 +1,57 @@
+header {
+	display: flex;
+	height: 257px;
+	width: 100%;
+
+	@media (max-width: 650px) {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.infos {
+	font-family: "GeorgiaItalic", sans-serif;
+	font-size: 1.2em;
+	color: $primary-font-color;
+	background-color: $secondary-color;
+	width: 260px;
+	height: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 650px) {
+		min-height: 150px;
+		height: auto;
+		width: 100%;
+	}
+
+	p {
+		font-weight: bold;
+		text-align: center;
+		width: 65%;
+	}
+}
+
+.img-header {
+	background-image: url('../img/woman-with-cup-of-coffe.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 390px;
+	height: 100%;
+	display: inline-block;
+
+	@media (max-width: 650px) {
+		display: block;
+		width: 100%;
+		height: 257px;
+	}
+}
+
+.trans-block {
+	height: 100%;
+	width: 132px;
+	background-color: rgba(255,255,255,0.25);
+}
